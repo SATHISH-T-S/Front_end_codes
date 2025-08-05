@@ -1,0 +1,41 @@
+#a{
+    border:2px solid black;
+    width:800px;
+    height:700px;
+    margin:auto;
+}
+#b{
+    
+position:relative;
+margin-left:200px;
+
+}
+#c{
+position:absolute;
+
+}
+#d{
+position:absolute;
+
+}
+.e{
+    width:500px;
+    height:700px;
+    position:relative;
+    z-index:1;
+}
+.f{
+    width:500px;
+    position:absolute;
+    bottom:200px;
+    left:200px;
+    z-index:3;
+}
+.g{
+    position:absolute;
+    bottom:30px;
+    left:350px;
+    z-index:2;
+
+    
+}

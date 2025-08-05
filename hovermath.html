@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>HOVER_MATH</title>
+<link rel="icon" type="image/x-jpg" href="zoro.jpg">
+<style>
+.a{
+    border:4px dashed greenyellow;
+    width:200px;    
+    height:75px;
+    text-align:center;
+    background-color: bisque;
+   position:relative;
+   left:550px;
+   
+   
+    
+}
+.b{
+    border:2px dashed greenyellow;
+    width:200px;    
+    height:30px;
+    text-align:center;
+    background-color: bisque;
+   display:none;
+   position:absolute;
+   
+   
+}
+td{
+    font-size: large;
+}
+.a:hover{
+background-color: aqua;
+}
+#z:hover{
+    color:brown;
+}
+.a:hover .b{
+display:block;
+}
+.h{
+    margin-top:45px;
+    position:relative;
+    left: 590px;        /* POSITION USED HERE */
+}
+.v:hover{
+color:deepskyblue;
+}
+.p:hover{
+color:fuchsia;
+}
+.q:hover{
+color:indianred;
+}
+.r:hover{
+color:hotpink;
+}
+.xx{
+    text-decoration: none;
+    background-color: transparent;
+}
+#sa{
+    position:relative;
+    top:250px;
+    left:500px;
+    color:lime;
+   
+}
+#cv{
+    width:80px;
+    position:fixed;
+    top:0px;
+    left:0px; 
+
+}
+#vc{
+    width:80px;
+    position:fixed;
+    top:0px;
+    right:190px;
+}
+</style>
+    </head>
+    <body>
+<p><h2 style="text-align: center;color:chocolate;">LET'S COME TO 2k KID , A EASY MATH PROBLEM WHICH IS:--</h2></p>
+<p><h1 style="text-align: center;color: blueviolet;">ADDITION</h1></p>
+<p><h3 style="text-align: center;color:darkgoldenrod;">KINDLY PROVE THE GIVEN ADDITION &  OPTIONS ARE GIVEN BELOW IN DROP_DOWN</h3></p>
+<div class="a">
+    <h1 id="z">2+2=</h1>
+    <div class="b">
+<table>
+    <tr>
+        <td class="q">A) 5</td>
+        <td class="r">B) 3</td>
+        <td class="v"><a href="C:\Users\Sanjayprakash\Desktop\prove.txt" class="xx" target="_blank">C) 4</a></td>
+        <td class="p">D) 0</td>
+    </tr>
+    </table>
+    </div>
+</div>
+<div class="h">
+    <button onclick="sat(0)">TO VIEW ANSWER</button>
+       <!-- <button onclick="sat(1)">BACK TO ZERO</button> -->
+</div>
+<div id="sa">
+    <p>POSTIONS USED IN BUTTON AND DISPLAY BOX </p>
+</div>
+<div id="cv">
+    <img src="zorosmile2.jfif">
+</div>
+<div id="vc">
+    <img src="zorosmile1.jfif">
+</div>
+<script>
+    function sat(y){
+        
+        var l
+        if(y==0){
+
+            l=4;
+        }
+        // else{
+        //     l=0
+        // }
+document.getElementById("z").innerHTML=l;
+        
+
+    }
+</script>
+
+ </body>
+</html>

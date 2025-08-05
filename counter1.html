@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>counter</title>
+     <style>
+        ol{
+            counter-reset: name;
+            list-style-type: none;
+        }
+            li::before{
+            counter-increment: name;
+            content: counters(name,".");
+
+        }
+     </style>
+    </head>
+    <body>
+        <ol>
+            <li>breakfast
+                <ol>
+                    <li>sandwich</li>
+                    <li>Milk</li>
+                    <li>Sausage</li>
+
+                </ol>
+            </li>
+            <li>lunch
+                <ol>
+                <li>Paneer Butter Masala Thali</li>
+                <li>biriyani</li>
+                <li>curd rice</li>
+                </ol>
+            </li>
+            <li>dinner
+                <ol>
+                    <li>idly</li>
+                    <li>dosa</li>
+                    <li>Milk</li>
+                </ol>
+            </li>
+        </ul>
+    </body>
+</html>

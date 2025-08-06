@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>NAV BAR</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    </head>
+<body>
+    <h1 style="text-align:center;margin-top:20px;">NAV BAR WITHOUT BOOTSTRAP USING MULTIPLE  DIVS</h1>
+<div>
+    <div>HOME</div>
+    <div>ORDERS</div>
+    <div>CANCELED</div>
+    <div>DETAILS</div>
+    <div>WISH LIST</div>
+    <div>TYPES</div>
+</div>
+   
+<h1 style="text-align:center;">NAV BAR USING BOOT STRAP</h1>
+
+<h3>HORI NAV</h3>
+<div class="container">
+    <nav class="navbar  navbar-expand-lg bg-body-tertiary" >
+    <div class="container-fluid">HOME</div>
+    <div class="container-fluid">ORDERS</div>
+    <div class="container-fluid">CANCELED</div>
+    <div class="container-fluid">DETAILS</div>
+    <div class="container-fluid">WISH LIST</div>
+    <div class="container-fluid">TYPES</div>
+    </nav>
+</div>
+<h3>VERTI NAV</h3>
+<div class="nav flex-column">
+    <div class="nav-item"><a class="nav-link active" href="#">HOME</a></div>
+    <div class="nav-item"><a class="nav-link active" href="#">ORDERS</a></div>
+    <div class="nav-item"><a class="nav-link disabled" href="#">CANCELED</a></div>
+    <div class="nav-item"><a class="nav-link active" href="#">DETAILS</a></div>
+    <div class="nav-item"><a class="nav-link active" href="#">WISH LIST</a></div>
+    <div class="nav-item"><a class="nav-link active" href="#">TYPES</a></div>
+</div>
+
+
+<hr>
+<h1 style="text-align:center;">DROP DOWN WITHOUT BOOT STRAP</h1>
+<div>
+    <h4>SATHISH TS </h4>
+    <div>
+        <h5>KID</h5>
+        <h5>SMART</h5>
+    </div>
+    </div>
+
+<H1 style="text-align: center;">DROP DOWN WITHOUT BUTTON USING BOOTSTRAP</H1>
+<div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <h4>SATHISH TS </h4></a>
+<div  class="dropdown-menu">
+    <h5>KID</h5>
+    <h5>SMART</h5>
+</div>
+</div>
+<h1 style="text-align:center;">DROP DOWN WITH BUTTON USING BOOTSTRAP</h1>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">SATHISH TS</button> 
+    <div class="dropdown-menu dropdown-menu-dark">
+<h5>SMART</h5>
+<h5>CHUTTI</h5>
+    </div>
+</div>
+
+<hr>
+
+<h1 style="text-align:center;">TABLE WITHOUT BOOTSTRAP</h1>
+<table>
+    <tr>
+        <td>SATHISH</td>
+        <td>SAI</td>
+        <td>RAM</td>
+        <td>ROHIT</td>
+    </tr>
+    <tr>
+        <td>SATHISH</td>
+        <td>SAI</td>
+        <td>RAM</td>
+        <td>ROHIT</td>
+    </tr>
+    <tr>
+        <td>SATHISH</td>
+        <td>SAI</td>
+        <td>RAM</td>
+        <td>ROHIT</td>
+    </tr>
+    <tr>
+        <td>SATHISH</td>
+        <td>SAI</td>
+        <td>RAM</td>
+        <td>ROHIT</td>
+    </tr>
+</table>
+
+<h1 style="text-align:center;">TABLE WITH BOOTSTRAP</h1>
+<table class="table table-success table-striped-columns">
+    <tr>
+        <td>SATHISH</td>
+        <td>SAI</td>
+        <td>RAM</td>
+        <td>ROHIT</td>
+    </tr>
+    <tr>
+        <td>SATHISH</td>
+        <td>SAI</td>
+        <td>RAM</td>
+        <td>ROHIT</td>
+    </tr>
+    <tr>
+        <td>SATHISH</td>
+        <td>SAI</td>
+        <td>RAM</td>
+        <td>ROHIT</td>
+    </tr>
+    <tr>
+        <td>SATHISH</td>
+        <td>SAI</td>
+        <td>RAM</td>
+        <td>ROHIT</td>
+    </tr>
+
+</table>
+<hr>
+
+
+<h1 style="text-align:center;">GRID WITHOUT BOOTSTRAP</h1>
+<div>
+<div>
+    <h4>SATHISH</h4>
+</div>
+<div>
+    <h4>SAI</h4>
+</div>
+<div>
+    <h4>RAM</h4>
+</div>
+<div>
+    <h4>ROHIT</h4>
+</div>
+</div>
+<h1 style="text-align:center;">GRID WITH BOOTSTRAP(2*2 matrix)</h1>
+<div  class="row row-cols-2">
+<div class="col">
+    <h4>SATHISH</h4>
+</div>
+<div class="col">
+    <h4>SAI</h4>
+</div>
+<div class="col">
+    <h4>RAM</h4>
+</div>
+<div class="col">
+    <h4>ROHIT</h4>
+</div>
+</div>
+<hr>
+<h1 style="text-align:center;">COUNTER WITHOUT BOOTSTRAP</h1>
+<div>
+    <div>
+        <div>
+            <h2>0+</h2>
+            <p>Projects Completed</p>
+        </div>
+        <div>
+            <h2>0+</h2>
+            <p>Happy Clients</p>
+        </div>
+        <div>
+            <h2>0+</h2>
+            <p>Lines Of Code</p>
+        </div>
+    </div>
+</div>
+<h1 style="text-align:center;">COUNTER UISNG BOOTSTRAP ns</h1>
+<div class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <h2 class="display-3 text-primary"><span class="counter-value" data-target="1500">0</span>+</h2>
+                <p class="h5 text-muted">Projects Completed</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h2 class="display-3 text-success"><span class="counter-value" data-target="250">0</span>+</h2>
+                <p class="h5 text-muted">Happy Clients</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h2 class="display-3 text-info"><span class="counter-value" data-target="10000">0</span>+</h2>
+                <p class="h5 text-muted">Lines of Code</p>
+            </div>
+        </div>
+    </div>
+<hr>
+<h1 style="text-align:center;">PAGINATION WITHOUT BOOTSTRAP</h1>
+<div>
+    <a href="#"><<<</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">>>></a>
+</div>
+
+<h1 style="text-align:center;">PAGINATION WITH BOOTSTRAP</h1>
+<div class="pagination pagination-lg justify-content-center">
+    <a class="page-link" href="#"><<</a>
+    <a class="page-link" href="#">1</a>
+    <a class="page-link" href="#">2</a>
+    <a class="page-link" href="#">3</a>
+    <a class="page-link" href="#">4</a>
+    <a class="page-link" href="#">5</a>
+    <a class="page-link" href="#">>></a>
+</div>
+<h1 style="text-align:center;color:green;">END</h1>
+</body>
+    </html>

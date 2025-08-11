@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+    FORM
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial scale 1.0">
+        <style>
+            .a{
+                display: flex;
+                font-size: large;
+            }
+            .b{
+                display: flex;
+            }
+            .client{
+                
+                font-size: larger;
+                background-color: rgb(202, 200, 200);
+                text-align: center;
+                color: brown;
+            }
+            /* .j .k .l .m .n .o{
+                font-size: larger;
+                color: brown;
+
+            } */
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+    <legend>Personal details:</legend>
+    <pre>
+        <div class="client">
+        <div class="a">
+            <label for="name">Name          </label>
+            <input type="text" id="name" name="Name" placeholder="-----mrs.-----">
+            <input type="text" id="name" name="name" placeholder="-----mr.-----">
+            </div>
+            <div class="y" style="display: flex;">
+                <label for="gender">Gender        </label>
+                <label for="fe">Female</label>
+                <input type="radio" id="gender" name="female">
+                <label for="male">Male</label>
+                <input type="radio" name="male" id="gender">
+                <label for="other">Others</label>
+                <input type="radio" name="others" id="gender">
+            </div>
+            <div class="b">
+            <label for="father name">Father name   </label>
+            <input type="text" id="fathername" placeholder="-mr-" name="fathername">
+            </div>
+            <div class="c" style="display: flex;">
+            <label for="mother name">Mother Name   </label>
+            <input type="text" id="mothername" placeholder="-mrs-" name="mothername">
+            </div>
+            <div class="d" style="display: flex;">
+            <label for="dob">Date-of-Birth </label>
+            <input type="date" id="dob" name="dob"><br>
+            </div>
+             <div class="e" style="display: flex;">
+            <label for="e-mail">E-Mail        </label>
+            <input type="email" name="mail" id="mail">
+            </div>
+            <div class="f" style="display: flex;">
+            <label for="phoneno">Mobile        </label>
+            <input type="text" id="mobile" placeholder="abc-abc-abcd" pattern="{0-9}[3]-{0-9}[3]-{0-9}[4]" value="+91" name="phoneno">
+            </div>
+            <div class="g" style="display: flex;">
+            <label for="message">Adders        </label>
+            <textarea id="message"  row="10" cols="20" ></textarea>
+            </div>
+            <!-- <input type="textarea" id="text" name="textarea"> -->
+             <div class="h" style="display: flex;">
+            <label for="city">City          </label>
+            <input type="text" id="city" name="city">
+            </div>
+            <div class="i" style="display: flex;">
+            <label for="pincode">Pincode       </label>
+            <input type="text" id="pincode" placeholder="xxx-yyy" pattern="{0-9}[3]-{0-9}[3]" name="pincode">
+           </div>
+           </div>
+  </pre>
+  </fieldset>
+  <fieldset style="background-color:rgb(243, 202, 209) ; color: rgb(122, 9, 9);">
+    <legend>Education details</legend>
+    <label for="Education details">Register Number</label>
+    <input type="text" name="Education details" id="mark sheet"><br>
+    <div class="j" style="display:inline-block;">
+        <pre>
+        <div class="p" style="font-size: large;">  
+    <label for="sub name">subjects         t.mark              p.mark</label>
+    <div class="k" style="display: flex;">
+    <label for="tamil">     Tamil</label>
+    <input type="text" id="tamil" name="tamil">
+    <input type="text" id="tamil" name="tamil">
+    </div>
+     <div class="l" style="display: flex;">
+     <label for="english">   English</label>
+    <input type="text" id="english" name="english">
+    <input type="text" id="english" name="english">
+    </div>
+    <div class="m" style="display: flex;">
+     <label for="Maths">     Maths</label>
+    <input type="text" id="Maths" name="Maths">
+    <input type="text" id="Maths" name="Maths">
+    </div>
+    <div class="n" style="display: flex;">
+     <label for="Science">   Science</label>
+    <input type="text" id="Science" placeholder="-75-" name="Science">
+    <input type="text" id="Science" placeholder="-25-" name="Science">
+    </div>
+    <div class="o" style="display: flex;">
+     <label for="Social">    Social</label>
+    <input type="text" id="Social" name="Social">
+    <input type="text" id="Social" name="Social">
+    </div>
+     </div> 
+     <!-- <label for="group">Group</label> -->
+      <label for="Group" style="font-size:large; display:flex;">Group</label>
+        <input list="Group" name="group"> 
+     <datalist id="Group">
+        <option value="bio-maths">Maths,Science</option>
+        <option value="computer Science">computer,maths</option>
+        <option value="pure Science">biology,chamistry,physics</option>
+        <option value="commerce">Commerce</option>
+     </datalist>
+     <input type="submit" id="submit">
+      
+
+   
+
+    <!-- <label for="mark">t.mark</label>
+
+
+    <label for="p.mark">p.mark</label> -->
+    </pre>
+    
+
+    <!-- oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit"> -->
+
+</fieldset>
+
+        </form>
+
+    </body>
+</html>

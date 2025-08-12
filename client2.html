@@ -7,6 +7,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial scale 1.0">
         <style>
+            legend{
+                background-image: url(tned.jpg);
+                
+
+            }
             .a{
                 display: flex;
                 font-size: large;
@@ -29,7 +34,7 @@
         </style>
     </head>
     <body>
-        <form action="">
+        <form action="done.html" method="post">
             <fieldset>
     <legend>Personal details:</legend>
     <pre>
@@ -62,11 +67,15 @@
             </div>
              <div class="e" style="display: flex;">
             <label for="e-mail">E-Mail        </label>
-            <input type="email" name="mail" id="mail">
+            <input type="email" name="mail" id="mail" required>
             </div>
             <div class="f" style="display: flex;">
             <label for="phoneno">Mobile        </label>
-            <input type="text" id="mobile" placeholder="abc-abc-abcd" pattern="{0-9}[3]-{0-9}[3]-{0-9}[4]" value="+91" name="phoneno">
+            <input type="tel" id="mobile" placeholder="abc-abc-abcd" pattern="{0-9}[3]-{0-9}[3]-{0-9}[4]" value="+91" name="phoneno">
+            </div>
+            <div class="x" style="display: flex;">
+            <label for="image">Image</label>
+            <input type="image" name="image" id="image"><br>
             </div>
             <div class="g" style="display: flex;">
             <label for="message">Adders        </label>
@@ -91,30 +100,30 @@
     <div class="j" style="display:inline-block;">
         <pre>
         <div class="p" style="font-size: large;">  
-    <label for="sub name">subjects         t.mark              p.mark</label>
+    <label for="sub name">subjects       t.mark          p.mark</label>
     <div class="k" style="display: flex;">
-    <label for="tamil">     Tamil</label>
-    <input type="text" id="tamil" name="tamil">
+    <label for="tamil">     Tamil      </label>
+    <input type="number" id="tamil" min="0" max="100" name="tamil">
     <input type="text" id="tamil" name="tamil">
     </div>
      <div class="l" style="display: flex;">
-     <label for="english">   English</label>
-    <input type="text" id="english" name="english">
+     <label for="english">   English      </label>
+    <input type="number" id="english" min="0" max="100" name="english">
     <input type="text" id="english" name="english">
     </div>
     <div class="m" style="display: flex;">
-     <label for="Maths">     Maths</label>
-    <input type="text" id="Maths" name="Maths">
+     <label for="Maths">     Maths      </label>
+    <input type="number" id="Maths" min="0" max="100" name="Maths">
     <input type="text" id="Maths" name="Maths">
     </div>
     <div class="n" style="display: flex;">
-     <label for="Science">   Science</label>
-    <input type="text" id="Science" placeholder="-75-" name="Science">
-    <input type="text" id="Science" placeholder="-25-" name="Science">
+     <label for="Science">   Science      </label>
+    <input type="number" id="Science" placeholder="-75-" min="0" max="75" name="Science">
+    <input type="number" id="Science" placeholder="-25-" min="0" max="25" name="Science">
     </div>
     <div class="o" style="display: flex;">
-     <label for="Social">    Social</label>
-    <input type="text" id="Social" name="Social">
+     <label for="Social">    Social      </label>
+    <input type="number" id="Social" min="0" max="100" name="Social">
     <input type="text" id="Social" name="Social">
     </div>
      </div> 
@@ -127,6 +136,14 @@
         <option value="pure Science">biology,chamistry,physics</option>
         <option value="commerce">Commerce</option>
      </datalist>
+      <pre>
+     <div class="y" style="display: flex;">
+       
+     <label for="marksheet" style="font-size: large; color: brown;">upload Marksheet     </label>
+     <input type="file" name="marksheet" id="marksheet">
+     
+</div>
+</pre>
      <input type="submit" id="submit">
       
 

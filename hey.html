@@ -5,19 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
 </head>
 <body>
-    <div class="=container">
-        <h1>text to voice</h1>
-        <input type="text" placeholder="enter the text" id="text" />
-        <br />
-        <button onclick="speak()">speak</button>
+    <img id="img1" class="icon" src="au.png" alt="icon" onclick="myfun()">
+    
+    <script>
+        function myfun(){
+            location.reload();
+        }
+    </script>
+<pre>
+                                                                             <img id="red" src="pause.jpeg" alt="mute">
+ </pre>
+     <!-- <script>
+    let icon = document.getElementById("img1");
+
+    icon.addEventListener("click", function() {
+      icon.classList.toggle("spin"); // start/stop spinning
+    });
+  </script>                                                                 -->
+    <div class="container">
+        <pre>
+        <h1>TEXT to VOICE</h1>
+<input type="text" placeholder="enter the text" id="text">
+        <br>
+<button onclick="speak()">speak</button>
+    </pre>
     
     <script>
         function speak(){
             const input=document.getElementById('text').value;
             const utterance = new SpeechSynthesisUtterance(input);
             speechSynthesis.speak(utterance);
+         
+            document.getElementById('red').src="play.jpeg";
         }
     </script>
     </div>

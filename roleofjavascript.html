@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="icon" type="image\x-jpg" href="zoro.jpg">
+</head>
+
+<body>
+ROLE'S OF JAVASCRIPT
+<h1>INLINE SCRIPT  TO CHANGE CONTENT</h1>
+<p>HELLO</p>
+<h1>SATHISH</h1>
+<h2 id="a">Welcome to JAVASCRIPTT</h2>
+<button type="button" onclick="document.getElementById('a').innerHTML='WELCOME TO LEARN JAVASCRIPT'">CLICK TO SEE VARIATION</button>
+<br>
+<br>
+
+<h1>Change Content Using FUNCTION CALL SCRIPT</h1>
+<p id="b">YES SUCCEDDE</p>
+<button type="button" onclick="chg()">CLICK TO CHANGE</button>
+<br>
+<br>
+<hr>
+<hr>
+<hr>
+<h1>INLINE SCRIPT TO CHANGE STYLE</h1>
+<p id="s" style=" width:100px;">HELLO</p>
+<h1>SATHISH</h1>
+<!-- <button type="button" onclick="document.getElementById('s').style.fontSize='20px'">CLICK</button> -->
+<!-- <button type="button" onclick="document.getElementById('s').style.color='green'">CLICK TO SEEE GREEN</button> -->
+<button type="button" onclick="document.getElementById('s').style.border='2px dashed black'">CLICK TO SEE BORDER</button>
+<h1>CHANGE STYLE USING FUNCTION CALL SCRIPT</h1>
+<button type="button" onclick="chg1()">CLICK TO SEE COLOR</button>
+<br>
+<br>
+<hr>
+<hr>
+<h1>CHANGE IMAGE SRC USING INLINE SCRIPT</h1>
+<img src="zorosmile1.jfif" id="i" style="width:200px;height:100px;border:2px dashed blue;">
+<button type="button" onclick="document.getElementById('i').src='zorosmile2.jfif'">CLICK TO SEE ANOTHER</button>
+<button type="button" onclick="document.getElementById('i').src='zorosmile1.jfif'">BACK TO ORIGINAL</button>
+<br>
+<br>
+<h1>CHANGE IMAGE USING FUNCTION CALL SCRIPT</h1>
+<img src="luffysmile1.jfif" id="m" style="width:200px; height:100px;border:2px dashed green;">
+<button type="button" onclick="chg2()">CLICK TO SEE ANOTHER</button>
+<button type="button" onclick="chg3()">BACK TO ORIGINAL</button>
+<br>
+<br>
+<hr>
+<hr>
+<h1>HIDE CONTENT USING INLINE SCRIPT</h1>
+<h3 id="f">FUCK UU </h3>
+<button type="button" onclick="document.getElementById('f').style.display='none'">HIDE THE BAD WORD</button>
+<button type="button" onclick="document.getElementById('f').style.display='block'">SHOW THE WORD </button>
+<br>
+<br>
+<h1>HIDE THE WORD USING FUNCTION CALL SCRIPT</h1>
+<p id="aa">BITCH</p>
+<button type="button" onclick="chg4()">HIDE THE WORD</button>
+<button type="button" onclick="chg5()">SHOW THE WORD</button>
+<br>
+<br>
+<hr>
+<hr>
+<!-- <h1 id="cc">2</h1>
+<h1 id="dd">3</h1> -->
+<p id="g">2</p>
+<p id="f">3</p>
+<button type="button" id="demo" onclick="chg6()">SUM</button>
+<script>
+function chg(){
+    document.getElementById("b").innerHTML="YES SUCCESS";
+    }
+    function chg1(){
+        // document.getElementById("s").style.fontSize='20px';
+        // document.getElementById('s').style.color='green';
+        document.getElementById('s').style.fontWeight='bold';
+    }
+    function chg2(){
+        document.getElementById("m").src='luffysmile2.jfif';
+    }
+    function chg3(){
+        document.getElementById("m").src='luffysmile1.jfif';
+    }
+    function chg4(){
+        document.getElementById('aa').style.display='none';
+    }
+    function chg5(){
+        document.getElementById('aa').style.display='block';
+    }
+    function chg6(){
+//var x=document.getElementById("cc").innerHTML;
+// var x=document.getElementById("cc").innerHTML;
+// var y=document.getElementById("dd").innerHTML;
+// document.getElementById("demo").innerHTML=x+y;
+// document.write(x+y);
+// var x=document.getElementById("g").innerHTML;
+// var y=document.getElementById("f").innerHTML;
+var x=2
+var y=3
+document.getElementById("demo").innerHTML=x+y;
+}
+
+
+
+</script>
+
+
+</body>
+</html>

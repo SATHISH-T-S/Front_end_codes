@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            FARENHEIT <input type="text" id="a" name="a">
+            <br>
+            <br>
+          
+</form>
+CELSIUS =<p id="b"></p>
+<button type="button" onclick="con()">CONVERT</button>
+<script>
+    function con(){
+        var x=document.getElementById("a").value;
+// let F=x;
+        let F=Number(x);
+        let C=(F-32)*5/9;
+    
+        document.getElementById("b").innerHTML=C;
+    }
+</script>
+
+
+
+
+    </body>
+</html>

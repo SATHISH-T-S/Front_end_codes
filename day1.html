@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #a{
+            border:2px dashed green;
+            width:500px;
+            height:500px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+    <body>
+<div id="a">
+<p style="text-align:center;" id="b">SATHISH</p>
+<img src="zorosmile1.jfif" style="padding-left:130px;" id="c">
+<br>
+<pre>
+
+            <button type="button" onclick="document.getElementById('b').style.color='red'">COLOR</button> <button type="button" onclick="document.getElementById('b').innerHTML='SATHISH T S'">NAME</button> <button type="button" onclick="document.getElementById('c').src='luffysmile3.jfif'">IMAGE</button> <button type="button" onclick="document.getElementById('c').style.display='none'">HIDE</button> 
+<br>
+            <button type="button" onclick="f1()">SIZE</button> <button type="button" onclick="f2()">NAME</button> <button type="button" onclick="f3()">IMAGE</button> <button type="button" onclick="f4()">VISISBLE</button>
+</pre>
+</div>
+<script>
+    function f1(){
+        document.getElementById("b").style.fontSize='50px';
+    }
+    function f2(){
+document.getElementById("b").innerHTML='T S S A TH I SH';
+    }
+    function f3(){
+        document.getElementById("c").src="luffysmile1.jfif";
+    }
+    function f4(){
+        document.getElementById("c").style.display="block";
+
+    }
+</script>
+    </body>
+</html>

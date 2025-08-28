@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <body>
+     <h1>   CHECK VALUE IS STRING OR NOT</h1>
+     <form>
+       <label for="a">ENTER THE VALUE</label> <input type="text" id="a" name="a">
+<button type="button" onclick="foor()">CLICK </button>
+<button type="button" onclick="lets1()">TO ASSIGN ARRAY VALUE</button>
+     </form>   
+     <br>
+     <br>
+     <br>
+
+     <!-- <h1>ASSIGN ARRAY VALUES</h1>
+<p class="aa"></p>
+<p class="aa"></p>
+<p class="aa"></p>
+<p class="aa"></p>
+<p class="aa"></p>
+<p class="aa"></p>
+<p class="aa"></p> -->
+        
+        
+        <p id="b">RESULT</p>
+
+        <script>
+            // age="AGE";
+            // var obb={name:"sathish",sex:"male",[age]:20}
+            // console.log(obb [age]);
+            // console.log(obb)
+            // console.log(obb.AGE)
+
+            function IFELS(){
+            // var x=Number(document.getElementById("a").value);
+                 var x=parseInt(prompt("Enter Some Value"));            
+            
+            if(x%2==0){
+                y="YES UR NUMBER IS EVEN "
+            }
+            else{
+                y="NOPE ITS  A ODD "
+            }
+            // console.log(y);
+           res();
+            }
+            function res(){
+             document.getElementById("b").innerHTML=y;
+            }
+            function ELSIF(){
+                var x=Number(prompt("ENTER ANY VALUE"))
+                // var x=document.getElementById("a").value;
+                if(x<10){
+                   y="NOPE VALUE LIES B/T 10"
+                }
+                else if(x>10 && x<20){
+               y="NOPE VALUE LIES B/T 10-20"
+                }
+                else if(x>20 && x<30){
+                   y= "NOPE VALUE LIES B/T 20-30"
+                }
+                else if(x>30 && x<40){
+                   y= "NOPE VALUE LIES B/T 30-40"
+
+                }
+                else if(x<50){
+                    y="NOPE VALUE LIES B/T 40-50"
+                }
+                else{
+                    y="GIVEN VALUE IS GREATER THAN 50"
+                }
+                document.getElementById("b").innerHTML=y;
+            }
+            function SWITT(){
+ var x=document.getElementById("a").value;
+//  var y=Number(x)
+// var y=String(x)
+// var x=prompt("ENTER THE A or a");
+//  console.log(x);
+// let y=typeof(x)
+// console.log(y)
+ switch(x){
+    case "A":
+        y="cAPS";
+        break;
+    case "a":
+        y="small"
+        break;
+        default:
+            y="EMPTY"
+ }
+ document.getElementById("b").innerHTML=y;
+
+            }
+            
+function switt2(){
+    var x=document.getElementById("a").value;
+if(x=="A-Z")
+y="EQUAL"
+else
+y="its SMALL"
+document.getElementById("b").innerHTML=y;
+}
+function foor(){
+    var x=Number(document.getElementById("a").value);
+    const a=[2,3,4,5,6,7,8,9]
+    
+    // console.log(typeof(x));
+    
+
+
+for(i=0;i<a.length;i++){
+    // console.log(a[i])
+    if(a[i]==x){
+        console.log(a[i])
+        y="present"
+        document.getElementById("b").innerHTML=y;
+        console.log("index value is "+i)
+    }
+    else{
+        y="not present"
+        document.getElementById("b").innerHTML=y;
+    }
+    
+    // console.log(i)
+    // console.log(a[i])
+    
+}
+// document.getElementById("b").innerHTML=y;
+}
+function table(){
+var x=document.getElementById("a").value;
+for(i=1;i<=10;i++){
+    console.log(x+"*"+i+"="+i*x);
+}
+
+}
+
+var p=parseInt(prompt("enter the first value"));
+var o=parseInt(prompt("enter the second value"));
+var i=parseInt(prompt("enter the third Value"));
+var r=parseInt(prompt("enter the Fourth Value"));
+var y=parseInt(prompt("enter the Fifth Value"));
+var t=parseInt(prompt("enter the sixth Value"));
+const u=[p,o,i,r,y,t]
+// console.log(u)
+
+function lets1(){
+    
+    // console.log(u)
+    // console.log(u[0])
+    for(s=0;s<u.length;s++){
+        if(u[s]%2==0){
+            console.log("even Numbers"+u[s]);
+        }
+        // if(u[s]%2!=0){
+        //     console.log("odd numbers"+u[s]);
+
+        // }
+       
+    }
+    // for(s=0;s<u.length;s++){
+    //     if(u[s]%2!=0){
+    //         console.log("odd numbers"+u[s])
+    //     }
+    // }
+     oddf();
+}
+function oddf(){
+    for(s=0;s<u.length;s++){
+        if(u[s]%2!=0){
+        console.log("odd numbers"+u[s])
+    }
+//  console.log("last number"+u[s]);   
+}
+// console.log("GIVEN NUMBERS"+u)
+mult();
+}
+function mult(){
+console.log("GIVEN NUMBERS"+u)
+var x=parseInt(prompt("enter the values wht u see in GIVEN NUMBERS FOR TABLES"))
+for(i=0;i<=10;i++){
+    // console.log("tables"+"br");
+    // console.log(i);
+    console.log(x+"*"+i+"="+x*i);
+}
+
+// if(x==u){
+//     for(i=0;i<=10;i++){
+// console.log(x+"*"+i+"="+x*i)
+//     }
+    // console.log("HERE IS UR TABLE")
+    // tab();
+// }
+// else{
+    // console.log("KINDLY CONSULT THE DOCTOR FOR UR EYE")
+// }
+
+// console.log("HERE IS UR TABLE")
+}
+// function tab(){
+// console.log("mul"+x)
+
+// }
+
+
+
+
+
+
+
+
+            // var x=Symbol(2);
+            // var x=String(x)
+            // console.log(x)
+            // var x=new Date().getDate();
+            // var z="2"
+            // var y=2;
+            // var z=x+y
+            // console.log(z)
+            // let y=typeof(x);
+            // let q=x=="sr ";
+            // // var x=Symbol(2);
+            // let x="sathish"
+            // var objj={[x]:1,y:4}
+            // var x=2
+            // var y=++x;
+            // var y=typeof(x)
+            // console.log(x)
+            // console.log(objj)
+            // document.getElementById("a").innerHTML=x;
+
+
+            </script>
+    </body>
+</html>
